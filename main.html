@@ -30,17 +30,32 @@
     <body>
         <h1>Flange Search Engine</h1>
         <form class="class block">
-            <label for="numOfBolts">Number of bolts : </label><br>
+            <label for="numOfBolts">Number of bolts: </label><br>
             <input type="text" id="numOfBolts" name="numOfBolts"><br>
-            <label for="outerDia">Outer Diameter : </label><br>
+            <label for="outerDia">Outer Diameter: </label><br>
             <input type="text" id="outerDia" name="outerDia"><br>
-            <label for="boltDia">Bolt Circle Diameter : </label><br>
+            <label for="boltDia">Bolt Circle Diameter: </label><br>
             <input type="text" id="boltDia" name="boltDia"><br>
-            <label for="thickness">Thickness : </label><br>
+            <label for="thickness">Thickness: </label><br>
             <input type="text" id="thickness" name="thickness"><br>
             <button class="class button" type="button" onclick="getInput()">Search</button>
             <input class="class button" type="reset">
         </form>
+        <div>
+            <h3>Input</h3>
+            <div>Number of bolts: </div>
+            <div id="input numOfBolts">0</div>
+            <div>Outer Diameter: </div>
+            <div id="input outerDia">0.0</div>
+            <div>Bolt Circle Diameter: </div>
+            <div id="input boltDia">0.0</div>
+            <div>Thickness: </div>
+            <div id="input thickness">0.0</div>
+        </div>
+        <div>
+            <h3>Result</h3>
+            <p id="result_FlangeType"></p>
+        </div>
 
     </body>
 </html>
