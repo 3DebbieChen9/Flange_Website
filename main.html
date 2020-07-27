@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Flange Search Engine</title>
+        <link rel="icon" href="src/img/icebear.JPG">
+        <!-- <link rel = "stylesheet" href = "index.css"> -->
+        <style>
+            h1{
+                color:darkslategray;
+                font-size: 70pt;
+            }
+            .class.big{
+                font-size: 70pt;
+                margin: 10pt;
+                position:fixed;
+                top: 0pt;
+                right: 20pt;
+            }
+            .class.block {
+                color: steelblue;
+                font: caption;
+                font-size: 16pt;
+                margin: 10pt;
+            }
+            .class.button {
+                color:navy;
+                /* font-size: 16pt; */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flange Search Engine</h1>
+        <form class="class block">
+            <label for="numOfBolts">Number of bolts : </label><br>
+            <input type="text" id="numOfBolts" name="numOfBolts"><br>
+            <label for="outerDia">Outer Diameter : </label><br>
+            <input type="text" id="outerDia" name="outerDia"><br>
+            <label for="boltDia">Bolt Circle Diameter : </label><br>
+            <input type="text" id="boltDia" name="boltDia"><br>
+            <label for="thickness">Thickness : </label><br>
+            <input type="text" id="thickness" name="thickness"><br>
+            <button class="class button" type="button" onclick="getInput()">Search</button>
+            <input class="class button" type="reset">
+        </form>
+
+    </body>
+</html>
+
+<script src="src/js/myscripts.js"></script>
